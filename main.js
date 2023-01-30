@@ -39,7 +39,9 @@ async function getPreferredLanguages() {
 
 function expressPreferenceOn(language) {
   Object.defineProperty(window.navigator.wrappedJSObject, "languages", {
-    value: [language],
+    // An array object needs to be cloned into the page script's scope
+    // to make its properties accessible.
+    value: cloneInto([language], window.navigator),
   });
   Object.defineProperty(window.navigator.wrappedJSObject, "language", {
     value: language,

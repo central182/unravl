@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Unravl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Suppress JavaScript translation of websites written in ANY of your preferred languages.",
   "author": "arnold",
   "homepage_url": "https://github.com/central182/unravl",
